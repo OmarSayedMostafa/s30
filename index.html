@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>السرية 30 إطفاء </title>
     <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.css">
 
-  </head>
-  <body>
-    <!-- Button to open the modal login form -->
-    <div class="login-page">
-      <div class="form">
-        <h1 style="text-align: center;">السرية 30 إطفاء </h1>
-        <img src="resources/airforceslogo.png" style="padding: 10px">
-        <form class="login-form">
-          <input type="text" placeholder="إسم المستخدم"/>
-          <input type="password" placeholder="كلمة المرور"/>
-          <button>دخول</button>
-          <p class="message" style="font-size: 15px">مستخدم جديد ؟ <a href="register.html">إنشاء حساب جديد</a></p>
-        </form>
-      </div>
-    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
+        // You can also require other files to run in this process
+        require('./renderer.js')
+
     </script>
-  </body>
+    <script type="text/javascript" charset="utf8" src="DataTables/datatables.js"></script>
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <!-- Button to open the modal login form -->
+    <div class="login-page">
+        <div class="form">
+            <h1 style="text-align: center;">السرية 30 إطفاء </h1>
+            <img src="resources/airforceslogo.png" style="padding: 10px">
+            <form class="login-form">
+                <input type="text" id="username_input" placeholder="إسم المستخدم" />
+                <input type="password" id="password_input" placeholder="كلمة المرور" />
+                <button id="login_btn" type="button" onclick="login(document.getElementById('username_input').value, document.getElementById('password_input').value ) ">دخول</button>
+                <p class="message" style="font-size: 15px">مستخدم جديد ؟ <a href="register.html">إنشاء حساب جديد</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+
 </html>
