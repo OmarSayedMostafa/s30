@@ -26,9 +26,9 @@
             <h1 style="text-align: center;">السرية 30 إطفاء </h1>
             <img src="resources/airforceslogo.png" style="padding: 10px">
             <form class="login-form">
-                <input type="text" id="username_input" placeholder="إسم المستخدم" />
+                <input type="text" id="username_input" placeholder="إسم المستخدم" autofocus="autofocus"/>
                 <input type="password" id="password_input" placeholder="كلمة المرور" />
-                <button id="login_btn" type="button" onclick="login(document.getElementById('username_input').value, document.getElementById('password_input').value ) ">دخول</button>
+                <button id="login_btn" type="submit" onclick="login(document.getElementById('username_input').value, document.getElementById('password_input').value ) ">دخول</button>
                 <p class="message" style="font-size: 15px">مستخدم جديد ؟ <a href="register.html">إنشاء حساب جديد</a></p>
             </form>
         </div>
